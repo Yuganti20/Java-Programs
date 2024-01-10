@@ -3,22 +3,14 @@ package ItsCoding;
 import java.util.Scanner;
 
 public class Yuganti {
-
+//How to convert Fahrenheit to Celsius Program in java
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		int x, y;
-		Scanner sc = new Scanner(System.in);  
-		System.out.println("Enter the no x and y before swapping:");
-		x = sc.nextInt();
-		y = sc.nextInt();
-		System.out.println("Before Swapping\nx = " + x + "\ny = " + y);
-
-		x=x+y;
-		y=x-y;
-		x=x-y;
-
-		System.out.println("After swapping\nx = " + x + "\ny = " + y);
-
+		float temperatue;
+		Scanner in = new Scanner(System.in);
+		System.out.println("enter the temperature");
+		temperatue = in.nextInt();
+		temperatue = ((temperatue - 32)*5)/9;
+		System.out.println(temperatue);
 	}
 }
